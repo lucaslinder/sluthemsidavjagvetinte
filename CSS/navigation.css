@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+}
+#logga {
+    width: 65px;
+    height: 50px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(27,37,86,255);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(19, 34, 150);
+    height: 25px;
+}
+
+
+.homebild {
+    height: 600px;
+    width: 480px;
+    display: block;
+    margin-left: 150px;
+    margin-right: auto;
+    margin-top: 150px;
+    border: solid 3px rgb(19, 34, 100);
+}
+
+.hometext {
+    margin-top: -550px;
+    font-size: 20px;
+    color: black;
+    margin-left: 700px;
+    margin-right: 10px;
+    letter-spacing: 2px;
+    line-height: 100%;
+}
+
+.squad {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 200px;
+    border: solid 3px rgb(19, 34, 87)
+}
+
+.squadtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 800px;
+    margin-top: -5315px;
+    color: black;
+    list-style-type: none;
+    font-size: 40px;
+    padding-top: 0px;
+    font-family: Lucida Handwriting; 
+}
+
+.squadtext li {
+    margin-bottom: 455px;
+}
+
+.indextitel {
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+
+.indexparagraph {
+    padding-right: 20px;
+}
+
+#historyparagraph {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fixtures {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.fixturestext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 800px;
+    margin-top: -3300px;
+    color: black;
+    list-style-type: none;
+    font-size: 40px;
+    padding-top: 0px;
+    font-family: Lucida Handwriting; 
+}
+
+.fixturestext li {
+    margin-bottom: 455px;
+}
+
+#finbildpålucas {
+    width: 612px;
+    height: 816px;
+    border: solid 3px rgb(19, 34, 87);
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.aboutustext {
+    margin-top: -750px;
+    margin-left: 850px;
+    letter-spacing: 2px;
+}
+@media screen and (max-width: 1000px) {
+    body #logga { display: none; }
+    ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+
+    #navigation {
+        display: block;
+        display: flex;
+        background-color: rgb(19, 34, 87);
+        position: fixed;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    .icon {
+       padding: 10px;
+        height: 30px;
+        width: 30px;
+        position: fixed;
+        color: green;
+        display: block;
+    }
+
+    #navigation li {
+        display: none; 
+    }
+
+    #navigation a {
+        padding: 14px 16px;
+        text-decoration: none;
+        display: none;
+    }
+
+    #navigation a.icon {
+        display: block;
+        display: flex;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+
+    
+    #navigation a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .active {
+        background-color: #04AA6D;
+        color: white;
+    }
+}
